@@ -1,0 +1,56 @@
+/* Web Blocks base styling with legacy browser (IE9 and below) support                                           */
+/* (c) Revolutionary Systems, 2014                                                                               */
+/*                                                                                                               */
+/* Usage: include in page using a conditional head link AFTER the normal blocks.css link, thus                   */
+/*     <!--[if IE]><link rel="stylesheet" type="text/css" href="_base/ie9-and-below-blocks.css" /><![endif]-->   */
+
+/* Base tag styling overides */
+/* Custom tag styling */
+
+rs\:block>rs\:row,
+rs\:block>rs\:column
+	{display: table;}
+
+rs\:block>rs\:row[left],
+rs\:block>rs\:column[left]
+	{text-align: left;}
+
+rs\:block>rs\:row[center],
+rs\:block>rs\:column[center]
+	{text-align: center;}
+
+rs\:block>rs\:row[right],
+rs\:block>rs\:column[right]
+	{text-align: right;}
+
+rs\:block>rs\:row[top]>*,
+rs\:block>rs\:column[top]>*
+	{vertical-align: top;}
+
+rs\:block>rs\:row[middle]>*,
+rs\:block>rs\:column[middle]>*
+	{vertical-align: middle;}
+
+rs\:block>rs\:row[bottom]>*,
+rs\:block>rs\:column[bottom]>*
+	{vertical-align: bottom;}
+
+rs\:block>rs\:row>rs\:column,
+rs\:block>rs\:column>rs\:row
+	{display: table-cell;}
+
+rs\:block>rs\:row[left]>rs\:column,
+rs\:block>rs\:column[left]>rs\:row,
+rs\:block>rs\:row[center]>rs\:column,
+rs\:block>rs\:column[center]>rs\:row,
+rs\:block>rs\:row[right]>rs\:column,
+rs\:block>rs\:column[right]>rs\:row
+	{display: inline-block;}
+
+rs\:block>rs\:row>rs\:column[auto]{flex-grow: 0;}
+rs\:block>rs\:row>rs\:column[middle]{vertical-align: center;}
+rs\:block>rs\:row>rs\:column[center]{text-align: center;}
+rs\:block>rs\:column{display: table;}
+rs\:block>rs\:column>rs\:row{display: table-row;}
+rs\:block>rs\:column>rs\:row[middle]{vertical-align: center;}
+rs\:block>rs\:column>rs\:row[center]{text-align: center;}

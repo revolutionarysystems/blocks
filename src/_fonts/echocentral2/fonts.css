@@ -1,0 +1,15 @@
+/* echocentral2 font setttings      */
+/* (c) Revolutionary Systems, 2014 */
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+body{font-family: sans-serif; font-size: 1.25vmax; line-height: 1.25;}
+h1,h2,h3{font-family: 'PT Sans Narrow', sans-serif; margin: 0; text-rendering: optimizeLegibility;}
+h1{font-size: 300%;}
+h2{font-size: 250%;}
+h3{font-size: 150%;}
+/*
+@media all and (max-width: 1000px){body{font-size: 1.35vmax;}}
+@media all and (max-width: 800px){body{font-size: 1.5vmax;}}
+@media all and (max-width: 600px){body{font-size: 2vmax;}}
+@media all and (max-width: 400px){body{font-size: 2.25vmax;}}
+*/

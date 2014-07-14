@@ -1,0 +1,22 @@
+		<rs:dependency name="angular">
+			<noframes>
+				<!-- In production use the Google CDN angular -->
+				<script type="text/javascript" src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
+			</noframes>
+			<rs:design>
+				<!-- When designing use a local angular -->
+				<script type="text/javascript" src="../common/angular-1.2.9.min.js"></script>
+			</rs:design>
+			<script type="text/javascript" name="builtin">
+				$(document).ready(function(){
+					setTimeout(function(){
+						angular.element(document).injector().invoke(function($compile) {
+						$div = $('rs\\:block[loaded]');
+							var scope = angular.element($div).scope();
+							$compile($div)(scope);
+							scope.$apply();
+						});
+					},5000);
+				});
+			</script>
+		</rs:dependency>

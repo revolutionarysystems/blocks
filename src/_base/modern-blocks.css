@@ -1,0 +1,56 @@
+/* Web Blocks base styling         */
+/* (c) Revolutionary Systems, 2014 */
+
+/* Base tag styling overides */
+*,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+html{height: 100%;}
+body{margin: 0;}
+button{color: inherit; font-size: inherit; cursor: pointer;}
+hr{border: 0.1em solid;}
+sup{font-size: 55%;}
+/* Custom tag styling */
+rs\:block{display: block; overflow: auto;}
+rs\:block[fixed]{position: fixed; width: 100%; z-index: 999;}
+rs\:block[scrollX]{overflow-x: scroll;}
+rs\:block[scrollY]{overflow-y: scroll;}
+rs\:block[fullHeight]{height: 100vh;}
+rs\:block[threeQuartersHeight]{height: 75vh;}
+rs\:block[halfHeight]{height: 50vh;}
+rs\:block[quarterHeight]{height: 25vh;}
+rs\:block[minFullHeight]{min-height: 100vh;}
+rs\:block[minThreeQuartersHeight]{min-height: 75vh;}
+rs\:block[minHalfHeight]{min-height: 50vh;}
+rs\:block[minQuarterHeight]{min-height: 25vh;}
+rs\:block[stretch]{position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden;}
+rs\:block[live]:empty{height: 4em;}
+rs\:block[loading]:empty{height: 4em; background: transparent url('data:image/gif;base64,R0lGODlhEAALAPQAAP///6qqqvLy8u7u7vf396urq6qqqrm5udTU1MnJyefn57W1tcLCwtfX18vLy+jo6La2tqurq8PDw/b29vHx8fr6+ry8vPLy8vr6+ubm5t7e3uzs7Pj4+AAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA') no-repeat center center;}
+rs\:block>rs\:row{display: table; /* legacy browser support */ display: flex; flex-flow: row wrap; justify-content: space-around; width: 100%;}
+rs\:block>rs\:row[auto]{width: auto; justify-content: flex-start;}
+rs\:block>rs\:row[single]{height: 100%; flex-wrap: nowrap; justify-content: space-between;}
+rs\:block>rs\:row>rs\:column{display: table-cell; /* legacy browser support */ position: relative; display: inline-block; flex-grow: 100; align-self: auto;}
+rs\:block>rs\:row>rs\:column[auto]{flex-grow: 0;}
+rs\:block>rs\:row>rs\:column[middle]{height: auto !important; align-self: center;}
+rs\:block>rs\:row>rs\:column[center]>*{margin: auto;}
+rs\:block>rs\:column{display: flex; flex-flow: column wrap; justify-content: space-around; width: 100%;}
+rs\:block>rs\:column[auto]{width: auto; justify-content: flex-start;}
+rs\:block>rs\:column[single]{height: 100%; flex-wrap: nowrap; justify-content: space-between;}
+rs\:block>rs\:column>rs\:row{position: relative; display: inline-block; flex-grow: 100; align-self: auto;}
+rs\:block>rs\:column>rs\:row[auto]{flex-grow: 0;}
+rs\:block>rs\:column>rs\:row[middle]{height: auto !important; align-self: center;}
+rs\:block>rs\:column>rs\:row[center]>*{margin: auto;}
+rs\:error{display: block; padding: 1em; text-align: center; font-size: 80%; opacity: 0.5;}
+rs\:swig{display: none;}
+
+/* various device fixes - assumes use of platform.js to set body platform attribute */
+body[platform*='Safari'][platform*='iOS']{height: 100%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[fullHeight]{height: 100%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[threeQuartersHeight]{height: 75%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[halfHeight]{height: 50%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[quartersHeight]{height: 25%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[minFullHeight]{min-height: 100%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[minThreeQuartersHeight]{min-height: 75%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[minHalfHeight]{min-height: 50%;}
+body[platform*='Safari'][platform*='iOS'] rs\:block[minQuartersHeight]{min-height: 25%;}
+
+/* custom styling classes */
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;} * html .clearfix { zoom: 1; } /* IE6 */ *:first-child+html .clearfix { zoom: 1; } /* IE7 */
