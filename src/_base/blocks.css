@@ -10,7 +10,7 @@ hr{border: 0.1em solid;}
 sup{font-size: 55%;}
 
 /* Custom tag styling */
-rs\:block{display: block; overflow: auto;}
+rs\:block,rs\:content{display: block; overflow: auto;}
 rs\:block[fixed]{position: fixed; width: 100%; z-index: 999;}
 rs\:block[scrollX]{overflow-x: scroll;}
 rs\:block[scrollY]{overflow-y: scroll;}
@@ -109,6 +109,7 @@ rs\:block>rs\:column>rs\:row[right]
 /* Other miscellaneous styling */
 rs\:error{display: block; padding: 1em; text-align: center; font-size: 80%; opacity: 0.5;}
 rs\:swig{display: none;}
+rs\:block>ul>li:last-child{padding-bottom: 2px !important; /* overflow fix */}
 
 /* various device fixes - assumes use of platform.js to set body platform attribute */
 body[platform*='Safari'][platform*='iOS']{height: 100%;}
@@ -122,4 +123,4 @@ body[platform*='Safari'][platform*='iOS'] rs\:block[minHalfHeight]{min-height: 5
 body[platform*='Safari'][platform*='iOS'] rs\:block[minQuartersHeight]{min-height: 25%;}
 
 /* custom styling classes */
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;} * html .clearfix { zoom: 1; } /* IE6 */ *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;} * html .clearfix {zoom: 1;} /* IE6 */ *:first-child+html .clearfix { zoom: 1; } /* IE7 */
