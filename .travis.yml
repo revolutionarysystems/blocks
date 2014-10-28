@@ -3,3 +3,8 @@ script:
 - grunt ci
 env:
   secure: Z0X3jH1i1Id9BfMIG6h6ijwUaK+HYYKzPl7djdsDET2V7bM8shdsBsxqQ1F4xzm3rFW1AMxw4gIeCC9UcPD78T880Uh0lKZnrZO4KIsGGhcVd4jigulMcCrEarkXGNRMpdeCBTt2X9glF/7AyoWwwAEDE0ImSdj7BR4CmOM1o1s=
+notifications:
+  email:
+    - adam@revolutionarysystems.co.uk
+    - andrew@revolutionarysystems.co.uk
+    - ci@revolutionarysystems.co.uk
