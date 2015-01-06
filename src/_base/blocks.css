@@ -10,7 +10,7 @@ hr{border: 0.1em solid;}
 sup{font-size: 55%;}
 
 /* Custom tag styling */
-rs\:block{display: block; overflow: auto;}
+rs\:block{display: block;}
 rs\:block[fixed]{position: fixed; width: 100%; z-index: 999;}
 rs\:block[scrollX]{overflow-x: scroll;}
 rs\:block[scrollY]{overflow-y: scroll;}
