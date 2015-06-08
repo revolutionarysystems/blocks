@@ -1,14 +1,1 @@
-{
-	"name": "blocks",
-	"version": "0.3.0-SNAPSHOT",
-	"artifacts": [{
-			"files": [{"src": "."}]}
-	],
-	"repositories": {
-		"distribution": [
-			{
-				"url": "http://build.revsys.co.uk/haven-repository"
-			}
-		]
-	}
-}
+{"name":"blocks","version":"0.2.1","artifacts":[{"files":[{"src":"."}]}],"repositories":{"distribution":[{"url":"http://build.revsys.co.uk/haven-repository"}]}}
