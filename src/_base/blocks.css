@@ -3,8 +3,7 @@
 
 /* Base tag styling overides */
 *,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-html{height: 100%;}
-body{margin: 0;}
+html, body{width: 100%; height: 100%; margin: 0;}
 button{color: inherit; font-size: inherit; cursor: pointer;}
 hr{border: 0.1em solid;}
 sup{font-size: 55%;}
@@ -32,11 +31,10 @@ rs\:row,
 rs\:column
 	{position: relative; display: block; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
 	  -webkit-flex-pack: distribute;  -moz-flex-pack: distribute; -ms-flex-pack: distribute; flex-pack: distribute;
-	 -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between;
-	 zwidth: 100%;}
+	 -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; justify-content: space-between;}
 
 rs\:row
-	{-webkit-box-orient: horizontal; -moz-box-orient: horizontal; -ms-box-orient: horizontal; box-orient: horizontal;
+	{width: 100%; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; -ms-box-orient: horizontal; box-orient: horizontal;
 	 -webkit-flex-flow: row wrap; -moz-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap;}
 
 rs\:column
